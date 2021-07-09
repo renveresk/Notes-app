@@ -140,7 +140,7 @@ function editNote(event) {
     const note = event.target.parentNode;
     const noteContent = note.firstChild;
     const editInput = note.children[1];
-    ;
+    
     if (!noteContent.classList.contains('edit-note')) { // turn on edit mode
         editInput.value = noteContent.innerText;
         noteContent.classList.toggle('edit-note');
