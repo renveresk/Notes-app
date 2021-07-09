@@ -1,0 +1,98 @@
+/* Removing default stylings from page */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Lato, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.input-container {
+    padding-bottom: 20px;
+}
+
+#note-input {
+    width: 100ch;
+    line-height: 15px;
+    padding: 5px;
+}
+
+.input-btns {
+    display: block;
+}
+
+.add-btn, .clear-btn, .edit-btn, .delete-btn {
+    margin: 10px;
+    width: 90px;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #edf6f9;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .5),
+                inset -2px -2px 2px rgba(0, 0, 0, .5);
+}
+
+.add-btn:hover, .clear-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    background-color: #fefae0;
+}
+
+.add-btn:active, .clear-btn:active, .edit-btn:active, .delete-btn:active {
+    background-color: #faedcd;
+    box-shadow: inset -2px -2px 2px rgba(255, 255, 255, .5),
+    inset 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.note {
+    border: 1px solid #333;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-container {
+    max-width: 200px;
+}
+
+.content-container {
+    overflow: auto;
+    margin: 10px;
+}
+
+.selected {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.edit-note {
+    display: none;
+}
+
+.edit-box {
+    padding: 3px;
+    margin: 10px;
+}
+
+.check-box {
+    display: block;
+    margin: 0 auto;
+}
